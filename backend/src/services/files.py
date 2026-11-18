@@ -2,7 +2,9 @@ import mimetypes
 from pathlib import Path
 from uuid import uuid4
 
-from fastapi import HTTPException, UploadFile, status
+from fastapi import HTTPException, status
+from starlette.datastructures import UploadFile
+
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from src.core.config import get_settings

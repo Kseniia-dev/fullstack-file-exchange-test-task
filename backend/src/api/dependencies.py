@@ -1,5 +1,4 @@
 from fastapi import Depends, Query
-from sqlalchemy.ext.asyncio import AsyncSession
 
 from src.db import get_session
 from src.schemas import PageParams
